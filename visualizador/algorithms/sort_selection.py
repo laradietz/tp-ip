@@ -5,7 +5,7 @@ n = 0
 i = 0          # cabeza de la parte no ordenada
 j = 0          # cursor que recorre y busca el mínimo
 min_idx = 0    # índice del mínimo de la pasada actual
-fase = "buscar"  # "buscar" | "swap"
+fase = "explorar"  # "buscar" | "swap"
 
 def init(vals):
     global items, n, i, j, min_idx, fase
@@ -14,7 +14,7 @@ def init(vals):
     i = 0
     j = i + 1
     min_idx = i
-    fase = "buscar"
+    fase = "explorar"
 
 def step():
     # TODO:
